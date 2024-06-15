@@ -1,0 +1,146 @@
+/* styles.css */
+
+/* Color Palette */
+:root {
+  --federal-blue: #03045eff;
+  --honolulu-blue: #0077b6ff;
+  --pacific-cyan: #00b4d8ff;
+  --non-photo-blue: #90e0efff;
+  --light-cyan: #caf0f8ff;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #f0f0f0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--gray);
+  color: var(--black);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.navbar {
+  background-color: var(--federal-blue);
+  padding: 10px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--non-photo-blue);
+}
+
+.welcome-section, .classes-overview, .instructors-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+h1, h2, h3 {
+  color: var(--honolulu-blue);
+}
+
+p {
+  color: var(--black);
+}
+
+.classes-overview ul {
+  list-style-type: disc;
+  margin: 20px 0;
+  padding-left: 40px;
+  color: var(--black);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: var(--honolulu-blue);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--pacific-cyan);
+  color: var(--black);
+}
+
+.class-details {
+  margin-bottom: 20px;
+  background-color: var(--light-cyan);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--honolulu-blue);
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--pacific-cyan);
+  border-radius: 5px;
+}
+
+form button {
+  background-color: var(--honolulu-blue);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+form button:hover {
+  background-color: var(--pacific-cyan);
+  color: var(--black);
+}

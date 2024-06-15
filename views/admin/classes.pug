@@ -1,0 +1,15 @@
+extends ../common/layout
+
+block content
+  h2= title
+  if classes.length > 0
+    ul
+      each classItem in classes
+        li
+          .class-details
+            h3= classItem.name
+            p Level: #{classItem.level}
+            p Schedule: #{classItem.schedule}
+            // Add more details as needed
+  else
+    p No classes available

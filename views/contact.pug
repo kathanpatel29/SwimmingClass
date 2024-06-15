@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .container
+    h2 Contact Us
+    form(action='/contact', method='POST')
+      div
+        label(for='name') Name:
+        input(type='text', id='name', name='name')
+      div
+        label(for='email') Email:
+        input(type='email', id='email', name='email')
+      div
+        label(for='message') Message:
+        textarea(id='message', name='message')
+      div
+        button(type='submit') Send Message

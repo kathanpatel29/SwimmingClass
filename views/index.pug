@@ -1,0 +1,46 @@
+extends common/layout
+
+block content
+  nav.navbar
+    .container
+      include common/navbar
+      
+  header.home-header
+    .container
+      h1 Welcome to Our Swimming Classes
+      p We offer a variety of classes for all skill levels. Whether you're a beginner looking to learn the basics or an advanced swimmer wanting to refine your technique, we have a class for you. Our experienced instructors are dedicated to helping you achieve your swimming goals.
+
+  section.classes-section
+    .container
+      h2 Classes Offered
+      if classes && classes.length > 0
+        ul.class-list
+          each classItem in classes
+            li.class-item
+              .class-details
+                h3= classItem.name
+                p Level: #{classItem.level}
+                p Schedule: #{classItem.schedule}
+                p Description: #{classItem.description}
+      else
+        p No classes available at the moment. Please check back later.
+
+  section.about-section
+    .container
+      h2 About Us
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac erat ac libero vehicula blandit non sit amet dolor. Duis quis orci eu libero ultricies rutrum at a tellus. Donec dapibus, nisl vel pellentesque ultricies, ipsum odio vestibulum ante, eget euismod magna tortor at ex.
+
+  section.gallery-section
+    .container
+      h2 Gallery
+      .gallery-images
+        p No gallery images available at the moment.
+
+  section.contact-section
+    .container
+      h2 Contact Us
+      p If you have any questions or would like to inquire about our classes, feel free to contact us via email or phone.
+
+  footer.footer
+    .container
+      p © 2024 Swimming Classes. All rights reserved.
