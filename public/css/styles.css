@@ -117,14 +117,14 @@ p {
 
 /* Header Section */
 header.home-header {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--federal-blue);
+  color: var(--white);
   padding: 3rem 0;
   text-align: center;
 }
 
 header.home-header h1 {
-  font-size: var(--text-4xl);
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -132,8 +132,20 @@ header.home-header h1 {
 header.home-header p {
   max-width: 600px;
   margin: 0 auto;
-  font-size: var(--text-m);
+  font-size: 1rem;
 }
+
+.header-image {
+  margin: 0;
+  padding: 0;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 
 /* About Section */
 section.about-section {
@@ -142,7 +154,7 @@ section.about-section {
 }
 
 section.about-section h2 {
-  font-size: var(--text-3xl);
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -150,8 +162,8 @@ section.about-section h2 {
 section.about-section p {
   max-width: 600px;
   margin: 0 auto;
-  font-size: var(--text-l);
-  color: var(--fourth-color);
+  font-size: 1.25rem;
+  color: var(--honolulu-blue);
 }
 
 /* Gallery Section */
@@ -161,7 +173,7 @@ section#section {
 }
 
 section#section h2 {
-  font-size: var(--text-3xl);
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -204,7 +216,7 @@ section#section h2 {
 
 .prev-btn, .next-btn {
   background-color: rgba(0, 0, 0, 0.5);
-  color: var(--secondary-color);
+  color: var(--white);
   border: none;
   cursor: pointer;
   padding: 0.5rem 1rem;
@@ -223,7 +235,7 @@ section.contact-section {
 }
 
 section.contact-section h2 {
-  font-size: var(--text-3xl);
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -231,21 +243,21 @@ section.contact-section h2 {
 section.contact-section p {
   max-width: 600px;
   margin: 0 auto;
-  font-size: var(--text-l);
-  color: var(--fourth-color);
+  font-size: 1.25rem;
+  color: var(--honolulu-blue);
 }
 
 /* Footer Section */
 footer.footer {
-  background-color: var(--fourth-color);
-  color: var(--secondary-color);
+  background-color: var(--light-cyan);
+  color: var(--black);
   padding: 2rem 0;
   text-align: center;
 }
 
 footer.footer p {
   margin: 0;
-  font-size: var(--text-small);
+  font-size: 0.75rem;
 }
 
 form div {
