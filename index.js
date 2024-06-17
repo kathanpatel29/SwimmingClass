@@ -16,6 +16,7 @@ app.set("view engine", "pug");
 // Middleware setup
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname)));
 
 // Routes setup
 const indexRouter = require('./routes/index');
