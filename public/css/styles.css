@@ -117,19 +117,38 @@ p {
 
 /* Header Section */
 header.home-header {
-  background-color: var(--federal-blue);
-  color: var(--white);
-  padding: 3rem 0;
-  text-align: center;
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent video overflow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-header.home-header h1 {
+header.home-header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire header */
+  z-index: -1; /* Behind other content */
+}
+
+.container {
+  z-index: 1; /* Ensure content is above the video */
+  text-align: center;
+  color: var(--white);
+  padding: 3rem 0;
+}
+
+.container h1 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-header.home-header p {
+.container p {
   max-width: 600px;
   margin: 0 auto;
   font-size: 1rem;
@@ -145,7 +164,6 @@ header.home-header p {
   padding-left: 50px;
   padding-right: 50px;
 }
-
 
 /* About Section */
 section.about-section {

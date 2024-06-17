@@ -2,11 +2,11 @@ extends common/layout
 
 block content
   header.home-header
+    video#header-video(autoplay muted loop)
+      source(src='/images/video.mp4' type='video/mp4')
     .container
       h1 Welcome to Our Swimming Classes
       p We offer a variety of classes for all skill levels. Whether you're a beginner looking to learn the basics or an advanced swimmer wanting to refine your technique, we have a class for you. Our experienced instructors are dedicated to helping you achieve your swimming goals.
-    .header-image
-    img.gallery-image(src='/images/image6.png' alt='Gallery Image 6')
 
   section#section
     .section-container
@@ -36,4 +36,4 @@ block content
     .container
       p © 2024 Swimming Classes. All rights reserved.
 
-  script(src='/script/script.js')
+  script(src='/scripts/script.js')
