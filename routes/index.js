@@ -23,12 +23,6 @@ router.get('/contact', (req, res) => {
   res.render('contact'); // Render view from views/contact.pug
 });
 
-// Example route: Gallery page
-router.get('/gallery', (req, res) => {
-  res.render('gallery'); // Render view from views/gallery.pug
-});
 
-router.get('/admin',(req,res)=>{
-  res.render('admin/dashboard');
-})
+
 module.exports = router;

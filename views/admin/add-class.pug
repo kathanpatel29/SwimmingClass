@@ -2,7 +2,7 @@ extends layout
 
 block content
   h2 Add a New Class
-  form(action='/add-class', method='POST')
+  form(action='/admin/addclass', method='POST')
     div
       label(for='name') Class Name:
       input(type='text', id='name', name='name')
