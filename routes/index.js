@@ -1,9 +1,16 @@
 const express = require('express');
 const router = express.Router();
+const db = require("../modules/classes/db");
 
 // Example route: Home page
 router.get('/', (req, res) => {
   res.render('index'); // Render view from views/index.pug
+});
+
+// Fetch classes list route
+router.get('/classes', async (req, res) => {
+  const classes = await db.getClasses();
+  res.render('classes', { title: 'Classes', classes });
 });
 
 // Example route: About page
@@ -21,4 +28,7 @@ router.get('/gallery', (req, res) => {
   res.render('gallery'); // Render view from views/gallery.pug
 });
 
+router.get('/admin',(req,res)=>{
+  res.render('admin/dashboard');
+})
 module.exports = router;

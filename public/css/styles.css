@@ -33,6 +33,17 @@ body {
   padding: 10px 0;
 }
 
+h1.logo {
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+}
+
+h1.logo:hover {
+  color: var(--white);
+  text-shadow: 1px 1px 1px black;
+}
+
 .navbar .container {
   display: flex;
   justify-content: space-between;
@@ -104,16 +115,137 @@ p {
   border-radius: 5px;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+/* Header Section */
+header.home-header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 3rem 0;
+  text-align: center;
 }
 
-.gallery img {
-  max-width: 100%;
+header.home-header h1 {
+  font-size: var(--text-4xl);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+header.home-header p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: var(--text-m);
+}
+
+/* About Section */
+section.about-section {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+section.about-section h2 {
+  font-size: var(--text-3xl);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+section.about-section p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: var(--text-l);
+  color: var(--fourth-color);
+}
+
+/* Gallery Section */
+section#section {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+section#section h2 {
+  font-size: var(--text-3xl);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel-images {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallery-image-container {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 100%;
   height: auto;
-  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.gallery-image:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.prev-btn, .next-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  z-index: 1;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Contact Section */
+section.contact-section {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+section.contact-section h2 {
+  font-size: var(--text-3xl);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+section.contact-section p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: var(--text-l);
+  color: var(--fourth-color);
+}
+
+/* Footer Section */
+footer.footer {
+  background-color: var(--fourth-color);
+  color: var(--secondary-color);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer.footer p {
+  margin: 0;
+  font-size: var(--text-small);
 }
 
 form div {
@@ -143,4 +275,19 @@ form button {
 form button:hover {
   background-color: var(--pacific-cyan);
   color: var(--black);
+}
+
+footer {
+  background-color: var(--federal-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
 }
